@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                http://maven.apache.org/xsd/settings-1.0.0.xsd">
+        <profiles>
+            <profile>
+                <id>backbase</id>
+                <activation>
+                    <activeByDefault>true</activeByDefault>
+                </activation>
+                <repositories>
+                    <repository>
+                        <id>Backbase Artifact Repository</id>
+                        <url>https://artifacts.backbase.com/repo/</url>
+                    </repository>
+                    <repository>
+                        <id>Backbase Artifact Releases Repository</id>
+                        <name>artifacts.backbase.com-releases</name>
+                        <url>https://artifacts.backbase.com/backbase-development-internal-releases</url>
+                    </repository>
+                    <repository>
+                        <id>Backbase Artifact Snapshots Repository</id>
+                        <name>artifacts.backbase.com-snapshots</name>
+                        <url>https://artifacts.backbase.com/backbase-development-snapshots</url>
+                    </repository>
+                </repositories>
+
+                <pluginRepositories>
+
+                    <pluginRepository>
+                        <id>Backbase Artifact Repository</id>
+                        <url>https://artifacts.backbase.com/repo/</url>
+                    </pluginRepository>
+
+                </pluginRepositories>
+
+                <properties>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </properties>
+            </profile>
+        </profiles>
+
+        <servers>
+
+            <server>
+                <id>Backbase Artifact Repository</id>
+                <username>{{username}}</username>
+                <password>{{password}}</password>
+            </server>
+
+            <server>
+                <id>Backbase Artifact Releases Repository</id>
+                <username>{{username}}</username>
+                <password>{{password}}</password>
+            </server>
+
+            <server>
+                <id>Backbase Artifact Snapshots Repository</id>
+                <username>{{username}}</username>
+                <password>{{password}}</password>
+            </server>
+
+        </servers>
+
+</settings>

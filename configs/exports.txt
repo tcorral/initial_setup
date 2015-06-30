@@ -1,0 +1,4 @@
+export MAVEN_OPTS="-Xms256m -XX:MaxPermSize=1024m -Xmx1024m"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME="/usr/local/apache-maven/apache-maven-3.2.5"
+export M2="/usr/local/apache-maven/apache-maven-3.2.5/bin"
