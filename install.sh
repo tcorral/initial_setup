@@ -90,7 +90,6 @@ function setup_env_variables() {
 }
 
 function setup_settingsxml() {
-echo "$ENCRYPTED_PASSWORD"
     echo "Setting settings.xml"
 	( $SETUP_SETTINGS${ENCRYPTED_PASSWORD} ) 2>&1 > /dev/null
 	echo "... done"
